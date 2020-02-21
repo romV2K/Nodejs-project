@@ -177,9 +177,6 @@ app.post('/writeNews', function ( req, res){
 });
 // -------------------------------------------------------------------------------
 
-console.log('hui')
-console.log('hui')
-console.log('hui')
 start();
 
 
