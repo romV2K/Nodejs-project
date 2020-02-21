@@ -1,0 +1,92 @@
+.form {
+  width: 60%;
+  height: 320px;
+  margin: 2% auto;
+  padding: 0px 20px 0px 20px;
+  display:inline-block;
+  border: 1px solid #89ABE3FF;
+  border-radius: 10px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 20px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.appBody {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+.form > p {
+  width: 70%;
+  height: 40px;
+  margin: 16px auto;
+  font-size: 25px;
+}
+.nameKod{
+  display: flex;
+  justify-content: space-between;
+}
+#name, #kod {
+  width: 43%;
+  margin: 10px 0px 10px 0px;
+  height: 30px;
+  padding: 3px;
+}
+
+#golubclass>p{
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.items{
+display: flex;
+justify-content: space-between;
+}
+
+#add,#del,#send{
+  width: 100px;
+  height: 30px;
+  color: white;
+  text-align: center;
+  font-size: 15px;
+  border-radius: 3px;
+  border: 0px;
+  font-weight: 500;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+}
+#del{
+  background-color: #ff3a3b;
+}
+#send{
+background-color: #00be4a;
+}
+#add{
+  background-color: #ffac0e;
+  }
+#send,#add{
+  margin-top: 15px;
+}
+
+#add:active{
+  background-color: skyblue ;
+}
+#del:active{
+  background-color: skyblue ;
+}
+#send:active{
+  background-color: skyblue ;
+}
+input{
+  height: 25px;
+  border-top: 0px;
+  border-right: 0px;
+  border-bottom: 1px solid #89ABE3FF;
+  font-weight: 500;
+  font-size: 15px;
+  border-left: 0px;
+}

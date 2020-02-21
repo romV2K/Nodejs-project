@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+     <%- include ('blocks/head.ejs') -%> 
+<body>
+     <%- include ('blocks/header.ejs', {selected: 'news'}); -%> 
+
+     <main class="views">
+          <div class="news">
+               <% for(let i = 0; i<newss.length; i++){ %>  
+               <div class="newsBlock">
+                    <div class="newsBlockFlex">
+                         <div>
+                              <h2 ><a href="/newsTitle/<%= ( i + 1 )%>"><%=newss[i].title %></a></h2>
+                              <h3 id="date">
+                                   <%= newss[i].date %>
+                              </h3>
+                         </div>
+                         <div class="pigeonIcon">
+                              <i class="fas fa-dove"></i>
+                         </div>
+                    </div>
+                    <hr>
+               </div>
+               <%}%>
+          </div>
+     </main>
+     <%- include ('blocks/footer.ejs') %> 
+</body>
+</html>

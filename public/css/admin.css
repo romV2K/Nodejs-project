@@ -1,0 +1,83 @@
+.header{
+     text-align: center;
+}
+main{
+     min-height:100%;
+     padding-bottom: 3%;
+     width: 80%;
+     margin: 0 auto;
+     margin-top: 3%;
+     font-family: 'Source Sans Pro', sans-serif;
+}
+.admin{
+     display: grid;
+     margin-top: 50px;
+     grid-template-columns: repeat(3, 1fr);
+     justify-content: center;
+     column-gap: 50px;
+}
+.forms{
+     display: flex;
+     justify-content: center;
+     flex-direction: column;
+     text-align: center;
+}
+
+
+input{
+     border: 1px solid #89ABE3FF;
+     font-weight: 500;
+     font-size: 15px;
+}
+textarea{
+     border: 1px solid #89ABE3FF;
+     font-weight: 500;
+     font-size: 15px;
+}
+
+button{
+     background-color: #00be4a;
+     width: 100px;
+     height: 30px;
+     color: white;
+     text-align: center;
+     font-size: 15px;
+     border-radius: 3px;
+     border: 0px;
+     font-weight: 500;
+     -webkit-border-radius: 3px;
+     -moz-border-radius: 3px;
+     -ms-border-radius: 3px;
+     -o-border-radius: 3px;
+     margin-left: 35%;
+}
+button:active{
+     background-color: skyblue ;
+}
+
+.uploadImg{
+     height: 100px;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-around;
+     justify-content: center;
+}
+
+.addFile{
+     display: flex;
+     width: 100px;
+     border-radius: 3px;
+     border: 0px;
+     background-color:gray;
+     text-align: center;
+     font-size: 15px;
+     
+}
+.addFileInvisible{
+     /* opacity: 0; */
+}
+
+.submitFile{
+
+}
+

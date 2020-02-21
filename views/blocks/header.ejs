@@ -1,0 +1,18 @@
+<header>
+    <div class="headerImg">
+        <img src="/img/header.jpg" alt="">
+        <div class="headerText">
+          <p>Миколаївський клуб спортивного голубівництва</p>
+          <p>'Миколаїв Дністровський'</p>
+        </div>
+      </div>
+    <nav>
+        <a <%if(selected=="main"){%>class="sellected"<%}%> href="/main">Головна</a>
+        <a <%if(selected=="news"){%>class="sellected"<%}%> href="/news">Новини</a>
+        <a <%if(selected=="competition"){%>class="sellected"<%}%> href="/competition">Змагання</a>
+        <a <%if(selected=="about"){%>class="sellected"<%}%> href="/about">Про клуб</a>
+        <a <%if(selected=="media"){%>class="sellected"<%}%> href="/media">Фото/Відео</a>
+        <a <%if(selected=="application"){%>class="sellected"<%}%> href="/application">Подати заявку</a>
+        <a <%if(selected=="write"){%>class="sellected"<%}%> href="/write">Новий запис</a>
+    </nav>
+</header>

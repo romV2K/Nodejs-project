@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include ('blocks/head.ejs') -%> 
+
+<body>
+  <%- include ('blocks/header.ejs', {selected: 'application'}); -%> 
+
+
+    <main class="appBody">
+      <div class="form">
+        <p>Заповніть форму і натисніть "Відправити"</p>
+        <form method="post" action="" id="formMain" name="formMain" class="repeater">
+          <div class="nameKod"> 
+            <input id="name" type="text" name="name" placeholder="Ваше Прізвище, Імя, По-батькові" maxlength="30" autocomplete="on">
+            <input id="kod" type="kod" name="kod" placeholder="Ваш код" maxlength="30" autocomplete="on">  
+          </div>
+
+          <div id="golubclass" ><p>Данні голуба(ів)</p></div>
+          <div class="pigData">
+              <div class="items">
+                <div>
+                  <label for="number">Номер голуба:</label>
+                  <input type="number" name="numbers" id="number" value="">
+                </div>
+                <div>
+                  <label for="stat">Стать:</label>
+                  <select name="stats" id="stat">
+                  <option value="-1" selected="selected">-</option>
+                  <option value="0">0</option>
+                  <option value="1">1</option>
+                  </select>
+                </div>
+                <div>
+                  <label for="year">Рік:</label>
+                  <select name="years" id="year">
+                <option value="-1" selected="selected">-</option>
+                <option value="2020">2020</option>
+                <option value="2019">2019</option>
+                <option value="2018">2018</option>
+                <option value="2017">2017</option>
+                <option value="2016">2016</option>
+                <option value="2015">2015</option>
+                <option value="2014">2014</option>
+                <option value="2013">2013</option>
+                <option value="2012">2012</option>
+                <option value="2011">2011</option>
+                <option value="2010">2010</option>
+                <option value="2009">2009</option>
+                  </select>
+                </div>
+                  <input data-repeater-delete="" type="button" value="Видалити" id="del">
+                </div>
+          </div>
+      <input type="button" value="Добавити ще" id="add"><br>
+      <input id="send" type="button" value="Відправити" onclick="AjaxFormRequest('messegeResult', 'formMain', 'https://zhudachiv-pigeons.com.ua/wp-content/themes/site/form.php')">
+      </form>
+      </div>
+    </main>
+    
+    <%- include ('blocks/footer.ejs') %> 
+
+</body>
+</html>

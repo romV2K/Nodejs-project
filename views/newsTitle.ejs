@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+     <%- include ('blocks/head.ejs') -%> 
+<body>
+     <%- include ('blocks/header.ejs', {selected: 'news'}); -%>
+     <main class="views">
+          <div class="newsTitleExtended">
+               <h1 class="title"><%=newss.title %></h1>
+               <div class="aboutNews">
+                    <p><%=newss.content %></p>
+                    <img src="" alt="">
+               </div>
+               <div class="newsDateAndAuthor">
+                    <p>Автор:<a href="#" class="author"> Роман Конопелько</a></p>
+                    <p>Дата:<a href="#" class="date"></a><%=newss.date %></p>
+               </div>
+          </div>
+     </main>
+     <%- include ('blocks/footer.ejs') %> 
+     <script src='public/js/script.js'></script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include ('blocks/head.ejs') -%> 
+<body>
+<%- include ('blocks/header.ejs', {selected: 'main'}); -%> 
+<main class="views">
+  <div class="main-grid">
+    <div class="advertisements">
+      <% for(let i = 0; i<posts.length; i++){ %>  
+        <article class="advertisement">
+          <h2><%=posts[i].title %></h2>
+          <p><%=posts[i].content %></p>
+          <hr class="advertisement-hr">
+        </article>
+      <%}%>
+    </div>
+    <div class="partners">
+      <h2>Корисні посилання</h2>
+      <div class="links">
+        <a href="http://race.gps-tracker.com.ua/" target="_blank"><img src="img/monitoryng.jpg" alt="monitoryng"></a>
+        <a href="http://unf-pigeons.com/" target="_blank"><img src="img/unf.jpg" alt="unf"></a>
+        <a href="http://www.ukrainemaster.com/" target="_blank"><img src="img/ukrmaster.jpg" alt="ukrmaster"></a>
+        <a href="https://www.pipa.be/" target="_blank"><img src="img/pipa.PNG" alt="PIPA"></a>
+        <a href="https://galychyna.jimdofree.com/" target="_blank"><img src="img/galychyna.PNG" alt="galychyna"></a>
+      </div>
+    </div>
+  </div>
+</main>
+<%- include ('blocks/footer.ejs') -%> 
+</body>
+</html>

@@ -1,0 +1,182 @@
+p,a{
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  position: relative;
+  margin: 0;
+  min-height: 100%;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  height: 50px;
+}
+nav > a {
+  padding-top: 14px;
+  text-decoration: none;
+  width: 16.6%;
+  font-size: 18px;
+  letter-spacing: 1.2px;
+  text-align: center;
+  color: black;
+}
+nav > a:hover {
+  background-color: #89ABE3FF;
+  transition: 0.5s;
+  color: #FCF6F5FF;
+}
+.headerImg {
+  position: relative;
+  height: 280px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.headerImg > img {
+  width: 100%;
+  height: 280px;
+  position: absolute;
+}
+.headerText{
+  font-size: 27px;
+  letter-spacing: 1.4px;
+  color: white;
+  text-align: center;
+  position: absolute;
+}
+.headerText>p{
+  margin-top: 20px;
+  text-transform: uppercase;
+}
+.views {
+  min-height:100%;
+  padding-bottom: 3%;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 3%;
+  font-family: 'Source Sans Pro', sans-serif;
+
+}
+
+.main-grid{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  column-gap: 1vw;
+
+}
+
+.advertisement{
+width: 100%;
+height: auto;
+margin-bottom: 2%;
+}
+.advertisement>h2{
+  text-align: center;
+  margin-bottom: 5px;
+}
+.advertisement>p{
+  font-size: 18px;
+  margin-bottom: 1rem;
+}
+.advertisement-hr{
+  margin-top: 20px;
+}
+.partners>h2{
+  text-align: center;
+  margin-bottom: 10px;
+}
+.img-fluid{
+  width: 100%;
+  height: auto;
+}
+.links {
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column-reverse;
+}
+.links > a > img {
+  height: 100px;
+  margin-top: 20px;
+}
+footer {
+  height: 100px;
+  position: absolute;
+  top: 100%;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding: 40px;
+  background-color: #89ABE3FF;
+  color: white;
+}
+.sellected {
+  background-color: #89ABE3FF;
+  color: #FCF6F5FF;
+}
+
+.newsBlock>a{
+  color: #89ABE3FF;
+  letter-spacing: 1.5px;
+  width: 100%;
+}
+
+.newsDate{
+  margin-top: 20px;
+  letter-spacing: 1.5px;
+}
+
+.newsBlock>hr{
+  margin-top: 20px;
+  border-color: #89ABE3FF;
+}
+#date{
+  margin-top: 20px;
+}
+.mediaGrid{
+  display: grid;
+}
+#newsTitle{
+  color: #89ABE3FF;
+  text-decoration: underline solid #89ABE3FF;
+}
+.title{
+  text-align: center;
+  text-transform: uppercase;
+  color: #89ABE3FF;
+}
+.newsDateAndAuthor a{
+  text-decoration: none;
+  color: #89ABE3FF;
+}
+.newsDateAndAuthor {
+  margin-top: 20px;
+  text-align: center;
+  text-decoration: none;
+}
+.newsBlockFlex{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.pigeonIcon{
+  font-size: 50px;
+  color: #89ABE3FF;
+  margin-right: 20px;
+  margin-top: 20px;
+}
